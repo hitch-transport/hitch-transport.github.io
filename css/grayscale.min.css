@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
+  margin: 0 0 25px;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -143,6 +143,7 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -242,7 +243,7 @@ a:focus {
 /* Rates Section */
 .download-section {
   width: 100%;
-  height: 500px;
+  height: auto;
   padding: 50px 0;
   color: white;
   background: url(../img/rates.png) no-repeat center center scroll;
@@ -256,7 +257,7 @@ a:focus {
 .rates-section-body {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding: 50px;
 }
 
 .rates-section-header {
@@ -264,7 +265,7 @@ a:focus {
 }
 
 .rates-box {
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #CC9900;
   color: #CC9900;
   background-color: transparent;

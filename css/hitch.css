@@ -300,7 +300,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 700;
 	letter-spacing: 30px;
 }
@@ -350,13 +350,13 @@ a:focus {
 	padding: 0px;
 	padding-left: 0px;
 	height: 200px;
-	width: 350px;
+	width: 320px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
 
 .service-thumbnail {
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
 .caption {
@@ -372,7 +372,7 @@ a:focus {
 	z-index:1;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
 	.thumbnail {
 		position:relative;
 		overflow:hidden;
@@ -559,13 +559,15 @@ select option:first-child {
 }
 
 /* Contact */
-
+/* form invalidation */
 .invalid {
-    background: red;
-    color: white;
+	/*
+    background: #C5B358;
+    color: #333333;*/
 }
 .error {
     color: red;
+    letter-spacing: 2px;
 }
 
 /* Footer */
@@ -626,6 +628,13 @@ footer p {
 .social-media:focus {
 	border: 1px solid #C5B358;
 	color: #C5B358;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 ::-moz-selection {
